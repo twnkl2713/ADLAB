@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twinkle Pal - Portfolio</title>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="2.css">
+    
+    <!-- AOS Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating particles -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+
+    <!-- Bars animation -->
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">TP</a>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Twinkle Pal</h1>
+            <h2>Aspiring Software Engineer</h2>
+            <p>
+                A third-year B.Tech Computer Science student with experience in C, C++, Java, Python, and Machine Learning.
+                Passionate about creating innovative solutions, exploring AI/ML, and solving complex problems.
+            </p>
+
+            <div class="btn-sci">
+                <a href="TwinklePal-Accenture.pdf" class="btn" download>Download CV</a>
+
+                <div class="sci">
+                    <a href="https://github.com/twnkl2713" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/twinkle-pal-2126002b2/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://x.com/neuralxplorer" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/t.pvt2713/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="profile.jpeg" alt="profile picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>About <span>Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Third-year B.Tech Computer Science Student</h3>
+                    <p>I'm a passionate computer science student with a strong foundation in programming and machine learning. My academic journey at KIIT DU has equipped me with both theoretical knowledge and practical skills to tackle real-world challenges.</p>
+                    
+                    <p>My interests lie at the intersection of AI/ML and software development, where I enjoy building intelligent systems that can solve complex problems. I'm particularly fascinated by NLP, computer vision, and reinforcement learning applications.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <h4>GPA</h4>
+                            <div class="stat-value">9.5<span>/10.0</span></div>
+                        </div>
+                        <div class="stat-box">
+                            <h4>Projects</h4>
+                            <div class="stat-value">8<span>+</span></div>
+                        </div>
+                        <div class="stat-box">
+                            <h4>Hackathons</h4>
+                            <div class="stat-value">3<span>+</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span>about_me.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code>class TwinklePal:
+    def __init__(self):
+        self.education = "B.Tech CSE"
+        self.university = "KIIT DU"
+        self.gpa = 9.5
+        self.interests = ["AI/ML", "NLP", "CV"]
+        self.skills = ["Python", "C++", "PyTorch", "TensorFlow"]
+    
+    def solve_problem(self, challenge):
+        solution = self.apply_knowledge(challenge)
+        return solution
+    
+    def build_project(self, idea):
+        implementation = self.code(idea)
+        return implementation</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section dark" id="education" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Edu<span>cation</span> & Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="zoom-in">
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Kalinga Institute of Industrial Technology (KIIT DU)</h3>
+                        <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                        <p>Current GPA: 9.5/10.0</p>
+                        <p>Relevant Coursework: Data Structures, Algorithms, Machine Learning, Artificial Intelligence, Database Management Systems, Computer Networks</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications">
+                <h3 class="sub-title">Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card" data-aos="flip-left">
+                        <div class="cert-icon">
+                            <i class='bx bxs-certification'></i>
+                        </div>
+                        <h4>BCG</h4>
+                        <p>Data Science Job Simulation</p>
+                    </div>
+                    
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="cert-icon">
+                            <i class='bx bx-code-alt'></i>
+                        </div>
+                        <h4>HackerRank</h4>
+                        <p>Problem Solving (Basic)</p>
+                    </div>
+                    
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="cert-icon">
+                            <i class='bx bx-bar-chart-alt'></i>
+                        </div>
+                        <h4>Accenture</h4>
+                        <p>Data Analytics & Visualization Job Simulation</p>
+                    </div>
+                    
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="cert-icon">
+                            <i class='bx bx-data'></i>
+                        </div>
+                        <h4>HackerRank</h4>
+                        <p>SQL (Intermediate)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tech <span>Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="zoom-in">
+                    <h3><i class='bx bx-brain'></i> ML/DL</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Numpy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                    <h3><i class='bx bx-code-alt'></i> Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Rust</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                    <h3><i class='bx bx-cog'></i> Tools & Libraries</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Hugging Face</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                    <h3><i class='bx bx-globe'></i> Web & Dev</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Rocket</span>
+                        <span class="skill-tag">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-meter">
+                <h3 class="sub-title">Proficiency Levels</h3>
+                <div class="meter-container">
+                    <div class="meter-item">
+                        <span>Python</span>
+                        <div class="meter">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                    
+                    <div class="meter-item">
+                        <span>Machine Learning</span>
+                        <div class="meter">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                    
+                    <div class="meter-item">
+                        <span>C++</span>
+                        <div class="meter">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                        <span>85%</span>
+                    </div>
+                    
+                    <div class="meter-item">
+                        <span>NLP</span>
+                        <div class="meter">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                        <span>88%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section dark" id="projects" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pro<span>jects</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="flip-up">
+                    <div class="project-icon">
+                        <i class='bx bx-brain'></i>
+                    </div>
+                    <h3>QueryCraft</h3>
+                    <p>AI-driven web app that converts natural language queries into SQL commands using transformer-based NLP models.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Streamlit</span>
+                        <span>Transformers</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class='bx bx-face'></i>
+                    </div>
+                    <h3>Facial Emotion Recognition</h3>
+                    <p>CNN model deployed on Hugging Face, achieving ~88% accuracy in classifying emotions from facial expressions.</p>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>CNN</span>
+                        <span>OpenCV</span>
+                        <span>Hugging Face</span>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class='bx bx-news'></i>
+                    </div>
+                    <h3>Fake News Detection</h3>
+                    <p>Text classification model using LSTM and BiLSTM algorithms, achieving 92% accuracy in detecting fake news articles.</p>
+                    <div class="project-tech">
+                        <span>LSTM</span>
+                        <span>BiLSTM</span>
+                        <span>NLP</span>
+                        <span>TensorFlow</span>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+                    <div class="project-icon">
+                        <i class='bx bx-game'></i>
+                    </div>
+                    <h3>GlitchType: AI Typing Chaos</h3>
+                    <p>Interactive game where AI dynamically sabotages user input, boosting user engagement by 30%.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>AI</span>
+                        <span>Game Dev</span>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="flip-up" data-aos-delay="400">
+                    <div class="project-icon">
+                        <i class='bx bx-chat'></i>
+                    </div>
+                    <h3>Chatrix</h3>
+                    <p>Real-time multi-room chat app built in Rust using Rocket framework and Server-Sent Events (SSE).</p>
+                    <div class="project-tech">
+                        <span>Rust</span>
+                        <span>Rocket</span>
+                        <span>SSE</span>
+                        <span>WebSockets</span>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="flip-up" data-aos-delay="500">
+                    <div class="project-icon">
+                        <i class='bx bx-trending-up'></i>
+                    </div>
+                    <h3>MoodFlow</h3>
+                    <p>Mood tracker with custom multithreaded HTTP server in Rust, NLP keyword heuristics, and dynamic visualizations.</p>
+                    <div class="project-tech">
+                        <span>Rust</span>
+                        <span>NLP</span>
+                        <span>Chart.js</span>
+                        <span>Multithreading</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="more-projects">
+                <a href="https://github.com/twnkl2713" target="_blank" class="btn-outline">View All Projects on GitHub <i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Expe<span>rience</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="experience-card" data-aos="zoom-in">
+                <div class="exp-header">
+                    <div class="exp-logo">
+                        <i class='bx bxl-microsoft'></i>
+                    </div>
+                    <div class="exp-title">
+                        <h3>Microsoft Learn Student Ambassadors: KIIT Chapter</h3>
+                        <h4>Technical Executive: AI/ML</h4>
+                        <div class="exp-period">2023 - Present</div>
+                    </div>
+                </div>
+                
+                <div class="exp-details">
+                    <ul>
+                        <li>Coordinated "Hackocalypse", a university-wide hackathon with over 100 participants; evaluated machine learning-based submissions.</li>
+                        <li>Engineered a DDQN-based reinforcement learning agent for Super Mario, achieving optimal gameplay through tailored reward functions and state abstraction.</li>
+                        <li>Organized technical workshops and sessions on AI/ML concepts for student community.</li>
+                    </ul>
+                </div>
+                
+                <div class="exp-tech">
+                    <span>Reinforcement Learning</span>
+                    <span>DDQN</span>
+                    <span>Event Management</span>
+                    <span>Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section dark" id="achievements" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Achieve<span>ments</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="zoom-in">
+                    <div class="achievement-icon">
+                        <i class='bx bx-trophy'></i>
+                    </div>
+                    <h3>First Place</h3>
+                    <p>Microsoft Learn Student Ambassadors Internal Hackathon</p>
+                    <div class="achievement-date">2024</div>
+                </div>
+                
+                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="achievement-icon">
+                        <i class='bx bx-medal'></i>
+                    </div>
+                    <h3>Top 300+ Teams</h3>
+                    <p>Shortlisted among 300+ teams in ICDCIT Hackathon 2025</p>
+                    <div class="achievement-date">2025</div>
+                </div>
+                
+                <div class="achievement-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="achievement-icon">
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <h3>High Academic Performance</h3>
+                    <p>Maintained 9.5/10.0 GPA throughout Computer Science program</p>
+                    <div class="achievement-date">2022-Present</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact <span>Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just chatting about technology and innovation.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class='bx bx-envelope'></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>twinklepalbrb@yahoo.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class='bx bx-map'></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bhubaneswar, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class='bx bx-graduation-cap'></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>KIIT DU, Bhubaneswar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/twnkl2713" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/twinkle-pal-2126002b2/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://x.com/neuralxplorer" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/t.pvt2713/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message <i class='bx bx-paper-plane'></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Twinkle Pal</a>
+                    <p>Aspiring Software Engineer & AI/ML Enthusiast</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/twnkl2713" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/twinkle-pal-2126002b2/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://x.com/neuralxplorer" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.instagram.com/t.pvt2713/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Twinkle Pal. All rights reserved.</p>
+                <p>Designed with <i class='bx bx-heart' style="color: #7cf03d;"></i> and <i class='bx bx-code-alt' style="color: #7cf03d;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class='bx bx-chevron-up'></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navbar = document.querySelector('.navbar ul');
+            navbar.classList.toggle('show');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('.navbar ul').classList.remove('show');
+                }
+            });
+        });
+        
+        // Navbar active link update on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar ul li a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.parentElement.classList.remove('active');
+                if(link.getAttribute('href') === `#${current}`) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+        
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if(window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

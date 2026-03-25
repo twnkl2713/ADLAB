@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - Q1</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<script>
+document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // stop page reload
+
+    const firstName = document.querySelector('input[placeholder="First Name"]').value;
+    const email = document.querySelector('input[type="email"]').value;
+    const password = document.getElementById("password").value;
+    const terms = document.getElementById("terms").checked;
+
+    if (!firstName || !email || !password) {
+        alert("Please fill all required fields");
+        return;
+    }
+
+    if (!terms) {
+        alert("You must agree to the Terms & Conditions");
+        return;
+    }
+
+    alert("Account created successfully!");
+
+    // redirect to login page
+    window.location.href = "index1login.html";
+});
+</script>
+
+<body>
+    <div class="container">
+        <!-- Left Hero Section -->
+        <div class="hero-section">
+            <div class="logo">AMU</div>
+            <button class="back-button">Back to website →</button>           
+            <div class="hero-content">
+                <h2 class="hero-title">Capturing Moments,<br>Creating Memories</h2>
+                <div class="carousel-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                </div>
+            </div>
+        </div>
+        <!--Right Form Section-->
+        <div class="form-section">
+            <div class="form-container">
+                <h1>Create an account</h1>
+                <p class="login-link">Already have an account? <a href="index1login.html">Log in</a></p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group-password">
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <br>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                    <button type="submit" class="submit-button">Create account</button>                   
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

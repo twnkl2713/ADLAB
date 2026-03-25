@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="registration-container">
+        <form id="registrationForm" class="form-card">
+            <h2>User Registration</h2>
+            
+            <div id="errorMsg"></div>
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Starts with Capital, no numbers">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="example@mail.com">
+            </div>
+
+            <div class="input-group">
+                <label for="tel">TEL</label>
+                <input type="text" id="tel" placeholder="10-digit number starting with 7,8,9">
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Min 6 chars">
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" readonly placeholder="Age">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="male" value="Male"> <label for="male" class="inline-label">Male</label>
+                    <input type="radio" name="gender" id="female" value="Female"> <label for="female" class="inline-label">Female</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Hobbies</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="hobbies" value="Reading"> Reading
+                    <input type="checkbox" name="hobbies" value="Sports"> Sports
+                    <input type="checkbox" name="hobbies" value="Coding"> Coding
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address</label>
+                <textarea id="address" rows="2"></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Register</button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

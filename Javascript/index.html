@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Mini Programs (1–20)</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        section { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; }
+        .highlight { background-color: yellow; }
+        button { margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Programs (1–20)</h1>
+
+<!-- 1 -->
+<section>
+    <h3>1. Age Calculator</h3>
+    <input type="date" id="dob">
+    <button onclick="calculateAge()">Calculate</button>
+    <p id="ageResult"></p>
+</section>
+
+<!-- 2 -->
+<section>
+    <h3>2. Dynamic Ordered List</h3>
+    <input type="text" id="listInput">
+    <button onclick="addToList()">Add</button>
+    <ol id="orderedList"></ol>
+</section>
+
+<!-- 3 -->
+<section>
+    <h3>3. Font Changer</h3>
+    <select onchange="changeFont(this.value)">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+    </select>
+    <p id="fontText">Change my font</p>
+</section>
+
+<!-- 4 -->
+<section>
+    <h3>4. Factorial</h3>
+    <input type="number" id="factInput">
+    <button onclick="factorial()">Calculate</button>
+    <p id="factResult"></p>
+</section>
+
+<!-- 5 -->
+<section>
+    <h3>5. Highlight Paragraphs</h3>
+    <input type="text" id="keyword">
+    <button onclick="highlight()">Search</button>
+    <p class="para">JavaScript is powerful</p>
+    <p class="para">Learning JS is fun</p>
+</section>
+
+<!-- 6 -->
+<section>
+    <h3>6. Dynamic Table</h3>
+    <input type="number" id="rows" placeholder="Rows">
+    <input type="number" id="cols" placeholder="Columns">
+    <button onclick="generateTable()">Generate</button>
+    <div id="tableContainer"></div>
+</section>
+
+<!-- 7 -->
+<section>
+    <h3>7. Image Preview</h3>
+    <input type="file" onchange="previewImage(event)">
+    <br><img id="preview" width="200">
+</section>
+
+<!-- 8 -->
+<section>
+    <h3>8. To-Do List</h3>
+    <input type="text" id="task">
+    <button onclick="addTask()">Add</button>
+    <ul id="todoList"></ul>
+</section>
+
+<!-- 9 -->
+<section>
+    <h3>9. Login Form</h3>
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</section>
+
+<!-- 10 -->
+<section>
+    <h3>10. Quiz</h3>
+    <p>2 + 2 = ?</p>
+    <button onclick="quiz(4)">4</button>
+    <button onclick="quiz(5)">5</button>
+    <p id="quizResult"></p>
+</section>
+
+<!-- 11 -->
+<section>
+    <h3>11. Word Count</h3>
+    <input type="text" oninput="countWords(this.value)">
+    <p id="wordCount"></p>
+</section>
+
+<!-- 12 -->
+<section>
+    <h3>12. Date & Time Alert</h3>
+    <button onclick="showDate()">Show</button>
+</section>
+
+<!-- 13 -->
+<section>
+    <h3>13. Enable / Disable Button</h3>
+    <input type="text" oninput="toggleButton(this.value)">
+    <button id="toggleBtn" disabled>Submit</button>
+</section>
+
+<!-- 14 -->
+<section>
+    <h3>14. Toggle Text</h3>
+    <button onclick="toggleText()">Toggle</button>
+    <p id="togglePara">Hello World</p>
+</section>
+
+<!-- 15 -->
+<section>
+    <h3>15. Even / Odd</h3>
+    <input type="number" id="numCheck">
+    <button onclick="evenOdd()">Check</button>
+    <p id="eoResult"></p>
+</section>
+
+<!-- 16 -->
+<section>
+    <h3>16. Uppercase / Lowercase</h3>
+    <input id="caseInput">
+    <button onclick="toUpper()">Upper</button>
+    <button onclick="toLower()">Lower</button>
+    <p id="caseResult"></p>
+</section>
+
+<!-- 17 -->
+<section>
+    <h3>17. Counter</h3>
+    <button onclick="changeCount(-1)">-</button>
+    <span id="count">0</span>
+    <button onclick="changeCount(1)">+</button>
+</section>
+
+<!-- 18 -->
+<section>
+    <h3>18. Vowel Count</h3>
+    <input oninput="countVowels(this.value)">
+    <p id="vowelCount"></p>
+</section>
+
+<!-- 19 -->
+<section>
+    <h3>19. Animated Name</h3>
+    <input id="nameInput">
+    <button onclick="animateName()">Animate</button>
+    <p id="nameAnim"></p>
+</section>
+
+<!-- 20 -->
+<section>
+    <h3>20. Reverse String</h3>
+    <input oninput="reverseString(this.value)">
+    <p id="reverseResult"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

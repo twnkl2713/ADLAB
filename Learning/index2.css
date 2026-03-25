@@ -1,0 +1,42 @@
+#headingOne {
+    color: red;
+}
+
+#headingTwo {
+    color: yellow;
+}
+
+p {
+    color: blue;
+}
+
+.myClass {
+    color: purple;
+    font-size: 24px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+#box {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 20px;
+}
